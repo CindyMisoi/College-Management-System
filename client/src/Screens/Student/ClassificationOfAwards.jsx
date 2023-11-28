@@ -12,6 +12,7 @@ const Marks = () => {
   const [meanScore, setMeanScore] = useState(null);
   const [classification, setClassification] = useState("");
   const [loading, setLoading] = useState(true);
+  const [rerender, setRerender] = useState(false);
 
   const getGradeAndRemarks = (score, educationLevel) => {
     let grade, remarks;
@@ -21,7 +22,7 @@ const Marks = () => {
         grade = 'A';
         remarks = 'Excellent';
       } else if (score >= 70 && score <= 79) {
-        grade = 'B';
+        grade = 'B'; 
         remarks = 'Good';
       } else if (score >= 60 && score <= 69) {
         grade = 'C';
@@ -123,6 +124,7 @@ const Marks = () => {
       } else {
         toast.error(studentResponse.data.message);
       }
+      setRerender((prev) => !prev);
     } catch (error) {
       toast.error(error.response?.data?.message || "An error occurred while fetching data.");
     } finally {
@@ -130,10 +132,10 @@ const Marks = () => {
     }
   };
 
-  useEffect(() => {
-    fetchData(); // Fetch data when the component mounts
-  }, []);
-
+  useEffect(()=>{
+fetchData();
+  }, [rerender])
+  
   return (
     <div className="w-[85%] mx-auto mt-10 flex justify-center items-start flex-col mb-10">
       <Heading title={`Marks of Semester ${userData.semester}`} />

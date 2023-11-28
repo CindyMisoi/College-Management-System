@@ -25,6 +25,8 @@ const Notice = () => {
   });
 
   const getNoticeHandler = () => {
+    const user = JSON.parse(sessionStorage.getItem("user"));
+    console.log(user);
     const intendedFor = router.pathname.replace("/", "") === "student"
       ? ["student", "both"]
       : ["student", "both", "faculty"];
@@ -36,10 +38,16 @@ const Notice = () => {
       .get(url)
       .then((response) => {
         if (response.data.success) {
-          // Filter notices based on the intended_for field
-          const filteredNotices = response.data.notices.filter((item) =>
-            intendedFor.includes(item.intended_for)
-          );
+          console.log(response.data);
+          // Filter notices based on the intended_for field and faculty department
+          const filteredNotices = response.data.notices.filter((item) => {
+            const isIntendedFor = intendedFor.includes(item.intended_for);
+            const isSameBranch = user && user.branch === item.facultyDepartment;
+            console.log(item.facultyDepartment);
+
+            return isIntendedFor && (isSameBranch || item.intended_for !== 'faculty');
+          });
+
           setNotice(filteredNotices);
         } else {
           toast.error(response.data.message);
@@ -50,7 +58,6 @@ const Notice = () => {
         toast.error(error.response.data.message);
       });
   };
-
   useEffect(() => {
     getNoticeHandler();
   }, [router.pathname]);
