@@ -7994,3 +7994,728 @@ Processing by MarksController#create as HTML
 Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 10.3ms | Allocations: 2076)
 
 
+Started GET "/branches" for 127.0.0.1 at 2023-11-28 21:21:16 +0300
+Processing by BranchesController#index as HTML
+  [1m[36mBranch Load (0.1ms)[0m  [1m[34mSELECT "branches".* FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 1744)
+
+
+Started GET "/branches" for 127.0.0.1 at 2023-11-28 21:21:16 +0300
+Processing by BranchesController#index as HTML
+  [1m[36mBranch Load (0.1ms)[0m  [1m[34mSELECT "branches".* FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1744)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 21:21:19 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 945)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 21:21:19 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/notices" for 127.0.0.1 at 2023-11-28 21:21:21 +0300
+Processing by NoticesController#index as HTML
+  [1m[36mNotice Load (0.1ms)[0m  [1m[34mSELECT "notices".* FROM "notices"[0m
+  ↳ app/controllers/notices_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1001)
+
+
+Started GET "/notices" for 127.0.0.1 at 2023-11-28 21:21:21 +0300
+Processing by NoticesController#index as HTML
+  [1m[36mNotice Load (0.1ms)[0m  [1m[34mSELECT "notices".* FROM "notices"[0m
+  ↳ app/controllers/notices_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1001)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 21:21:22 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 21:21:22 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/branches" for 127.0.0.1 at 2023-11-28 21:21:23 +0300
+Processing by BranchesController#index as HTML
+  [1m[36mBranch Load (0.1ms)[0m  [1m[34mSELECT "branches".* FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1745)
+
+
+Started GET "/branches" for 127.0.0.1 at 2023-11-28 21:21:23 +0300
+Processing by BranchesController#index as HTML
+  [1m[36mBranch Load (0.1ms)[0m  [1m[34mSELECT "branches".* FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1745)
+
+
+Started GET "/notices" for 127.0.0.1 at 2023-11-28 21:21:48 +0300
+Processing by NoticesController#index as HTML
+  [1m[36mNotice Load (0.1ms)[0m  [1m[34mSELECT "notices".* FROM "notices"[0m
+  ↳ app/controllers/notices_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1001)
+
+
+Started GET "/notices" for 127.0.0.1 at 2023-11-28 21:21:48 +0300
+Processing by NoticesController#index as HTML
+  [1m[36mNotice Load (0.1ms)[0m  [1m[34mSELECT "notices".* FROM "notices"[0m
+  ↳ app/controllers/notices_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1001)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 21:21:54 +0300
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 21:21:54 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.2ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 840)
+
+
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"loginid"=>1, "password"=>"[FILTERED]", "session"=>{"loginid"=>1, "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://127.0.0.1:3000)
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."loginid" = ? LIMIT ?[0m  [["loginid", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+  [1m[36mAdmin Update (0.2ms)[0m  [1m[33mUPDATE "admins" SET "updated_at" = ?, "session_token" = ? WHERE "admins"."id" = ?[0m  [["updated_at", "2023-11-28 18:22:13.719738"], ["session_token", "[FILTERED]"], ["id", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (10.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+Completed 200 OK in 220ms (Views: 0.4ms | ActiveRecord: 10.6ms | Allocations: 2568)
+
+
+Started GET "/students" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:5:in `index'
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 737)
+
+
+Started GET "/adminCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 3496)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Processing by AdminsController#count as HTML
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1222)
+
+
+  [1m[36mAdmin Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  ↳ app/controllers/admins_controller.rb:91:in `count'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 1620)
+
+
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 1101)
+
+
+Started GET "/students" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1208)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Started GET "/adminCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Processing by BranchesController#count as HTML
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+  [1m[36mBranch Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 829)
+
+
+Processing by AdminsController#count as HTML
+Processing by FacultiesController#count as HTML
+  [1m[36mAdmin Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/admins_controller.rb:91:in `count'
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 1377)
+
+
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 1253)
+
+
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 641)
+
+
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 705)
+
+
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:13 +0300
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 623)
+
+
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:22:14 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 623)
+
+
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:22:14 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:22:14 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Started GET "/students" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1134)
+
+
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+Started GET "/adminCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by FacultiesController#count as HTML
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+Processing by AdminsController#count as HTML
+  [1m[36mAdmin Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  ↳ app/controllers/admins_controller.rb:91:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+  [1m[36mFaculty Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+Started GET "/adminCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Started GET "/students" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Processing by AdminsController#count as HTML
+Processing by StudentsController#count as HTML
+  [1m[36mAdmin Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  ↳ app/controllers/admins_controller.rb:91:in `count'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 1237)
+
+
+  ↳ app/controllers/students_controller.rb:5:in `index'
+  [1m[36mStudent Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Completed 200 OK in 42ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 10487)
+
+
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.1ms | Allocations: 4571)
+
+
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 4442)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 655)
+
+
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 2133)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:22:36 +0300
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Started POST "/faculty/login" for 127.0.0.1 at 2023-11-28 21:29:02 +0300
+Processing by SessionsController#create_faculties as HTML
+  Parameters: {"loginid"=>1, "password"=>"[FILTERED]", "session"=>{"loginid"=>1, "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://127.0.0.1:3000)
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."loginid" = ? LIMIT ?[0m  [["loginid", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:30:in `create_faculties'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+  [1m[36mFaculty Update (0.2ms)[0m  [1m[33mUPDATE "faculties" SET "updated_at" = ?, "session_token" = ? WHERE "faculties"."id" = ?[0m  [["updated_at", "2023-11-28 18:29:03.030969"], ["session_token", "[FILTERED]"], ["id", 1]]
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+  [1m[36mTRANSACTION (10.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+Completed 200 OK in 220ms (Views: 0.5ms | ActiveRecord: 10.7ms | Allocations: 2790)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 21:29:03 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.2ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 21:29:03 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.2ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"loginid"=>1, "password"=>"[FILTERED]", "session"=>{"loginid"=>1, "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://127.0.0.1:3000)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."loginid" = ? LIMIT ?[0m  [["loginid", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+  [1m[36mAdmin Update (0.3ms)[0m  [1m[33mUPDATE "admins" SET "updated_at" = ?, "session_token" = ? WHERE "admins"."id" = ?[0m  [["updated_at", "2023-11-28 18:29:17.604321"], ["session_token", "[FILTERED]"], ["id", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (24.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+Completed 200 OK in 239ms (Views: 0.4ms | ActiveRecord: 24.8ms | Allocations: 2630)
+
+
+Started GET "/students" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Started GET "/adminCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 709)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 722)
+
+
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 649)
+
+
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 623)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Processing by AdminsController#count as HTML
+  [1m[36mAdmin Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  ↳ app/controllers/admins_controller.rb:91:in `count'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 921)
+
+
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1245)
+
+
+Processing by BranchesController#count as HTML
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+  [1m[36mBranch Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 930)
+
+
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1806)
+
+
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Started GET "/students" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Started GET "/adminCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Processing by AdminsController#count as HTML
+  ↳ app/controllers/students_controller.rb:5:in `index'
+  [1m[36mAdmin Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 2065)
+
+
+  ↳ app/controllers/admins_controller.rb:91:in `count'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1427)
+
+
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 662)
+
+
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Processing by FacultiesController#count as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 1100)
+
+
+  [1m[36mFaculty Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1158)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:29:17 +0300
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Started POST "/faculty/login" for 127.0.0.1 at 2023-11-28 21:31:01 +0300
+Processing by SessionsController#create_faculties as HTML
+  Parameters: {"loginid"=>1, "password"=>"[FILTERED]", "session"=>{"loginid"=>1, "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://127.0.0.1:3000)
+  [1m[36mFaculty Load (0.3ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."loginid" = ? LIMIT ?[0m  [["loginid", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:30:in `create_faculties'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+  [1m[36mFaculty Update (0.2ms)[0m  [1m[33mUPDATE "faculties" SET "updated_at" = ?, "session_token" = ? WHERE "faculties"."id" = ?[0m  [["updated_at", "2023-11-28 18:31:01.468424"], ["session_token", "[FILTERED]"], ["id", 1]]
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+Completed 200 OK in 225ms (Views: 0.5ms | ActiveRecord: 10.4ms | Allocations: 2675)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 21:31:01 +0300
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 21:31:01 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.5ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms | Allocations: 893)
+
+
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+
+Started GET "/branches" for 127.0.0.1 at 2023-11-28 21:31:17 +0300
+Processing by BranchesController#index as HTML
+  [1m[36mBranch Load (0.1ms)[0m  [1m[34mSELECT "branches".* FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/branches" for 127.0.0.1 at 2023-11-28 21:31:17 +0300
+Processing by BranchesController#index as HTML
+  [1m[36mBranch Load (0.1ms)[0m  [1m[34mSELECT "branches".* FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1744)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"loginid"=>1, "password"=>"[FILTERED]", "session"=>{"loginid"=>1, "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://127.0.0.1:3000)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."loginid" = ? LIMIT ?[0m  [["loginid", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+  [1m[36mAdmin Update (0.2ms)[0m  [1m[33mUPDATE "admins" SET "updated_at" = ?, "session_token" = ? WHERE "admins"."id" = ?[0m  [["updated_at", "2023-11-28 18:33:45.815199"], ["session_token", "[FILTERED]"], ["id", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+Completed 200 OK in 221ms (Views: 0.5ms | ActiveRecord: 10.6ms | Allocations: 2630)
+
+
+Started GET "/students" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 626)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Processing by StudentsController#index as HTML
+Processing by FacultiesController#count as HTML
+Started GET "/adminCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/students_controller.rb:5:in `index'
+Processing by AdminsController#count as HTML
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 2662)
+
+
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 2583)
+
+
+  [1m[36mAdmin Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+  ↳ app/controllers/admins_controller.rb:91:in `count'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 2022)
+
+
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+Started GET "/students" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+  ↳ app/controllers/students_controller.rb:5:in `index'
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 3905)
+
+
+Started GET "/adminCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Processing by AdminsController#count as HTML
+  [1m[36mAdmin Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 623)
+
+
+  ↳ app/controllers/admins_controller.rb:91:in `count'
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 2630)
+
+
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Processing by StudentsController#count as HTML
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+  [1m[36mStudent Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 704)
+
+
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 2526)
+
+
+Started GET "/studentCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Started GET "/branchCount" for 127.0.0.1 at 2023-11-28 21:33:45 +0300
+Processing by StudentsController#count as HTML
+  [1m[36mStudent Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:101:in `count'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+Processing by BranchesController#count as HTML
+  [1m[36mBranch Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:46:in `count'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 631)
+
+
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 623)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:33:46 +0300
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Started GET "/facultyCount" for 127.0.0.1 at 2023-11-28 21:33:46 +0300
+Processing by FacultiesController#count as HTML
+  [1m[36mFaculty Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "faculties"[0m
+  ↳ app/controllers/faculties_controller.rb:88:in `count'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 623)
+
+

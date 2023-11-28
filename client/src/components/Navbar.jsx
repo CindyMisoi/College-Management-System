@@ -2,10 +2,16 @@ import React from "react";
 import { FiLogOut } from "react-icons/fi";
 import { useLocation, useNavigate } from "react-router-dom";
 import { RxDashboard } from "react-icons/rx";
+import { setAuth, setUserId, setUserData } from "../redux/actions";
 
 const Navbar = () => {
   const router = useLocation();
   const navigate = useNavigate();
+
+  const handleLogout = () => {
+    sessionStorage.clear();
+    navigate("/");
+  }
   return (
     <div className="shadow-lg shadow-gray-500/40 px-6 py-4 flex justify-between items-center bg-gray-200 rounded-lg">
       <p
@@ -19,7 +25,7 @@ const Navbar = () => {
       </p>
       <button
         className="flex justify-center items-center text-red-500 px-3 py-2 font-semibold rounded-sm"
-        onClick={() => navigate("/")}
+        onClick={handleLogout}
       >
         Logout
         <span className="ml-2">
