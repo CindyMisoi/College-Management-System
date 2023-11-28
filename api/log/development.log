@@ -7286,3 +7286,309 @@ Processing by FacultiesController#get_faculty as HTML
 Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 820)
 
 
+Started POST "/getStudentDetails" for 127.0.0.1 at 2023-11-28 20:29:39 +0300
+Processing by StudentsController#get_student as HTML
+  Parameters: {"enrollment_no"=>"1", "student"=>{"enrollment_no"=>"1"}}
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."enrollment_no" = ? LIMIT ?[0m  [["enrollment_no", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `get_student'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.9ms | Allocations: 893)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:33:41 +0300
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:33:41 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+
+Started POST "/getStudentDetails" for 127.0.0.1 at 2023-11-28 20:33:47 +0300
+Processing by StudentsController#get_student as HTML
+  Parameters: {"enrollment_no"=>"1", "student"=>{"enrollment_no"=>"1"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."enrollment_no" = ? LIMIT ?[0m  [["enrollment_no", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `get_student'
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:34:16 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.2ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1086)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:34:16 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 1008)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:34:25 +0300
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:34:25 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:34:36 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:34:37 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.2ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:36:20 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:36:20 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 2027)
+
+
+  [1m[36mFaculty Load (0.3ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1815)
+
+
+Started POST "/faculty/login" for 127.0.0.1 at 2023-11-28 20:36:28 +0300
+Processing by SessionsController#create_faculties as HTML
+  Parameters: {"loginid"=>1, "password"=>"[FILTERED]", "session"=>{"loginid"=>1, "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://127.0.0.1:3000)
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."loginid" = ? LIMIT ?[0m  [["loginid", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:30:in `create_faculties'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+  [1m[36mFaculty Update (0.2ms)[0m  [1m[33mUPDATE "faculties" SET "updated_at" = ?, "session_token" = ? WHERE "faculties"."id" = ?[0m  [["updated_at", "2023-11-28 17:36:28.543884"], ["session_token", "[FILTERED]"], ["id", 1]]
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+Completed 200 OK in 222ms (Views: 0.4ms | ActiveRecord: 10.3ms | Allocations: 2606)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:36:28 +0300
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:36:28 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 850)
+
+
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.2ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started POST "/getStudentDetails" for 127.0.0.1 at 2023-11-28 20:37:19 +0300
+Processing by StudentsController#get_student as HTML
+  Parameters: {"enrollment_no"=>"1", "student"=>{"enrollment_no"=>"1"}}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."enrollment_no" = ? LIMIT ?[0m  [["enrollment_no", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `get_student'
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 20:38:07 +0300
+Started GET "/branches" for 127.0.0.1 at 2023-11-28 20:38:07 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 996)
+
+
+Processing by BranchesController#index as HTML
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 20:38:07 +0300
+  [1m[36mBranch Load (0.2ms)[0m  [1m[34mSELECT "branches".* FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1852)
+
+
+Started GET "/branches" for 127.0.0.1 at 2023-11-28 20:38:07 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Processing by BranchesController#index as HTML
+  [1m[36mBranch Load (0.1ms)[0m  [1m[34mSELECT "branches".* FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1744)
+
+
+Started POST "/getStudentDetails" for 127.0.0.1 at 2023-11-28 20:38:11 +0300
+Processing by StudentsController#get_student as HTML
+  Parameters: {"enrollment_no"=>"1", "student"=>{"enrollment_no"=>"1"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."enrollment_no" = ? LIMIT ?[0m  [["enrollment_no", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `get_student'
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:46:13 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 1008)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:46:13 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.2ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started POST "/getStudentDetails" for 127.0.0.1 at 2023-11-28 20:46:20 +0300
+Processing by StudentsController#get_student as HTML
+  Parameters: {"student"=>{}}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."enrollment_no" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `get_student'
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 793)
+
+
+Started POST "/getStudentDetails" for 127.0.0.1 at 2023-11-28 20:46:32 +0300
+Processing by StudentsController#get_student as HTML
+  Parameters: {"enrollment_no"=>"1", "student"=>{"enrollment_no"=>"1"}}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."enrollment_no" = ? LIMIT ?[0m  [["enrollment_no", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `get_student'
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/faculty/login" for 127.0.0.1 at 2023-11-28 20:46:58 +0300
+Processing by SessionsController#create_faculties as HTML
+  Parameters: {"loginid"=>1, "password"=>"[FILTERED]", "session"=>{"loginid"=>1, "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:5173) didn't match request.base_url (http://127.0.0.1:3000)
+  [1m[36mFaculty Load (0.3ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."loginid" = ? LIMIT ?[0m  [["loginid", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:30:in `create_faculties'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+  [1m[36mFaculty Update (0.2ms)[0m  [1m[33mUPDATE "faculties" SET "updated_at" = ?, "session_token" = ? WHERE "faculties"."id" = ?[0m  [["updated_at", "2023-11-28 17:46:58.607026"], ["session_token", "[FILTERED]"], ["id", 1]]
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sessions_controller.rb:34:in `create_faculties'
+Completed 200 OK in 224ms (Views: 0.7ms | ActiveRecord: 10.5ms | Allocations: 2678)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:46:58 +0300
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:46:58 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Processing by FacultiesController#get_faculty as HTML
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 1487)
+
+
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 871)
+
+
+Started POST "/getStudentDetails" for 127.0.0.1 at 2023-11-28 20:47:44 +0300
+Processing by StudentsController#get_student as HTML
+  Parameters: {"enrollment_no"=>"1", "student"=>{"enrollment_no"=>"1"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."enrollment_no" = ? LIMIT ?[0m  [["enrollment_no", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `get_student'
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:48:16 +0300
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:48:16 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 850)
+
+
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+
+Started POST "/getStudentDetails" for 127.0.0.1 at 2023-11-28 20:48:48 +0300
+Processing by StudentsController#get_student as HTML
+  Parameters: {"enrollment_no"=>"1", "student"=>{"enrollment_no"=>"1"}}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."enrollment_no" = ? LIMIT ?[0m  [["enrollment_no", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `get_student'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:50:05 +0300
+Started POST "/getFacultyDetails" for 127.0.0.1 at 2023-11-28 20:50:05 +0300
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 826)
+
+
+Processing by FacultiesController#get_faculty as HTML
+  Parameters: {"employee_id"=>1, "faculty"=>{"employee_id"=>1}}
+  [1m[36mFaculty Load (0.1ms)[0m  [1m[34mSELECT "faculties".* FROM "faculties" WHERE "faculties"."employee_id" = ? LIMIT ?[0m  [["employee_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/faculties_controller.rb:9:in `get_faculty'
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+
+Started POST "/getStudentDetails" for 127.0.0.1 at 2023-11-28 20:50:09 +0300
+Processing by StudentsController#get_student as HTML
+  Parameters: {"enrollment_no"=>"1", "student"=>{"enrollment_no"=>"1"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."enrollment_no" = ? LIMIT ?[0m  [["enrollment_no", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `get_student'
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started POST "/getStudentDetails" for 127.0.0.1 at 2023-11-28 20:59:18 +0300
+Processing by StudentsController#get_student as HTML
+  Parameters: {"enrollment_no"=>"2", "facultyDepartment"=>"Computer Science", "student"=>{"enrollment_no"=>"2"}}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."enrollment_no" = ? LIMIT ?[0m  [["enrollment_no", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `get_student'
+Completed 400 Bad Request in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 779)
+
+
+Started POST "/getStudentDetails" for 127.0.0.1 at 2023-11-28 20:59:23 +0300
+Processing by StudentsController#get_student as HTML
+  Parameters: {"enrollment_no"=>"1", "facultyDepartment"=>"Computer Science", "student"=>{"enrollment_no"=>"1"}}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."enrollment_no" = ? LIMIT ?[0m  [["enrollment_no", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `get_student'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 820)
+
+

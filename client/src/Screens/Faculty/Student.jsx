@@ -24,6 +24,10 @@ const Student = () => {
   const searchStudentHandler = (e) => {
     e.preventDefault();
     toast.loading("Getting Student");
+    // retrive faculty  department from session storage
+    const facultyDepartment = sessionStorage.getItem("faculty_branch");
+    console.log(facultyDepartment);
+
     const headers = {
       "Content-Type": "application/json",
     };
@@ -34,7 +38,10 @@ const Student = () => {
     axios
       .post(
         url,
-        { enrollment_no: search },
+        { 
+          enrollment_no: search,
+          facultyDepartment: facultyDepartment,
+         },
         { headers }
       )
       .then((response) => {
