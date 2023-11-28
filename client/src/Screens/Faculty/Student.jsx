@@ -52,24 +52,29 @@ const Student = () => {
             toast.error("No Student Found!");
             setId(""); // Clear the ID when no student is found
           } else {
-            toast.success(response.data.message);
             const studentData = response.data.student; // Get the first student
-            setData({
-              enrollment_no: studentData.enrollment_no,
-              firstName: studentData.firstName,
-              middleName: studentData.middleName,
-              lastName: studentData.lastName,
-              email: studentData.email,
-              phoneNumber: studentData.phoneNumber,
-              semester: studentData.semester,
-              branch: studentData.branch,
-              gender: studentData.gender,
-              profile: studentData.profile,
-              education_level: studentData.education_level,
-            },
-            console.log(studentData.education_level),
-            );
-            setId(studentData.id); // Set the ID of the found student
+
+            // Check if the student is from the same branch as the faculty
+            if (studentData.branch === facultyDepartment) {
+              toast.success("Student is from this department!");
+              setId(studentData.id); // Set the ID of the found student
+              setData({
+                enrollment_no: studentData.enrollment_no,
+                firstName: studentData.firstName,
+                middleName: studentData.middleName,
+                lastName: studentData.lastName,
+                email: studentData.email,
+                phoneNumber: studentData.phoneNumber,
+                semester: studentData.semester,
+                branch: studentData.branch,
+                gender: studentData.gender,
+                profile: studentData.profile,
+                education_level: studentData.education_level,
+              });
+            } else {
+              toast.error("Student is not from this department!");
+              setId(""); // Clear the ID when student is not from the same department
+            }
           }
         } else {
           toast.error(response && response.data ? response.data.message : "An error occurred");
@@ -83,8 +88,6 @@ const Student = () => {
       });
   };
   
-  
-
   return (
     <div className="w-[85%] mx-auto mt-10 flex justify-center items-start flex-col mb-10">
       <div className="flex justify-between items-center w-full">
