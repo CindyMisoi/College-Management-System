@@ -1,13 +1,13 @@
 import { USER_DATA, USER_LOGIN_ID, SET_AUTH } from "./action";
 
-export const setUserData = (userData) => ({
+export const setUserData = (data) => ({
   type: USER_DATA,
-  payload: userData,
+  payload: data,
 });
 
-export const setUserId = (loginid) => ({
+export const setUserId = (data) => ({
   type: USER_LOGIN_ID,
-  payload: loginid,
+  payload: data,
 });
 
 export const setAuth = (auth) => ({

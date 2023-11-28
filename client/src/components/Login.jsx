@@ -34,7 +34,7 @@ const Login = () => {
          // Save user data to session storage
          sessionStorage.setItem("session_token", response.data.session_token);
          sessionStorage.setItem("loginId", response.data.loginid);
-         sessionStorage.setItem("faculty", JSON.stringify(response.data));
+         sessionStorage.setItem("user", JSON.stringify(response.data));
 
          dispatch(setAuth(response.data.session_token));
          dispatch(setUserId(response.data.loginid));
