@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import toast from "react-hot-toast";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Heading from "../../components/Heading";
 import axios from "axios";
 import apiServer from "../../config/apiServer";
@@ -653,6 +654,7 @@ const Admin = () => {
           )}
         </div>
       )}
+      <ToastContainer/>
     </div>
   );
 };
