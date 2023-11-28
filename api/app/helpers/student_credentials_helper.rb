@@ -1,0 +1,2 @@
+module StudentCredentialsHelper
+end

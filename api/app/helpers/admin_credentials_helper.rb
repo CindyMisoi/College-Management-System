@@ -1,0 +1,2 @@
+module AdminCredentialsHelper
+end
