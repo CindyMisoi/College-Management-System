@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import Heading from "../../components/Heading";
 import apiServer from "../../config/apiServer";
  
-const Marks = () => {
+const Awards = () => {
   const { userData } = useSelector((state) => state);
   const [marks, setMarks] = useState([]);
   const [educationLevel, setEducationLevel] = useState(null);
@@ -180,4 +180,4 @@ fetchData();
   );
 };
  
-export default Marks;
+export default Awards;

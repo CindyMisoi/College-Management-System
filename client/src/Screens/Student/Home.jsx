@@ -5,9 +5,17 @@ import Timetable from "./Timetable";
 import Marks from "./Marks";
 import Notice from "../../components/Notice";
 import Material from "./Material";
-import Awards from "./ClassificationOfAwards";
+import Awards from "./Awards";
 import { Toaster } from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router-dom";
+import {
+  FiInfo,
+  FiUser,
+  FiMap,
+  FiBook,
+} from "react-icons/fi";
+import { LiaAwardSolid } from "react-icons/lia";
+import { FaXmarksLines } from "react-icons/fa6";
 const Home = () => {
   const [selectedMenu, setSelectedMenu] = useState("My Profile");
   const router = useLocation();
@@ -19,86 +27,72 @@ const Home = () => {
     }
     setLoad(true);
   }, [navigate, router.state]);
+
+  const menuItems = [
+    { key: "My Profile", label: "Profile", icon: <FiUser /> },
+    { key: "Timetable", label: "Timetable", icon: <FiMap /> },
+    { key: "Semester Marks", label: "Marks", icon: <FaXmarksLines /> },
+    { key: "Awards", label: "Awards", icon: <LiaAwardSolid /> },
+    { key: "Material", label: "Material", icon: <FiBook /> },
+    { key: "Notice", label: "Notice", icon: <FiInfo /> },
+  ];
   return (
     <section>
       {load && (
         <>
-          <Navbar />
-          <ul className="flex justify-evenly items-center gap-10 w-[85%] mx-auto my-8">
-            <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
-                selectedMenu === "My Profile"
-                  ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
-                  : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
-              }`}
-              onClick={() => setSelectedMenu("My Profile")}
-            >
-              My Profile
-            </li>
-            <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
-                selectedMenu === "Timetable"
-                  ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
-                  : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
-              }`}
-              onClick={() => setSelectedMenu("Timetable")}
-            >
-              Timetable
-            </li>
-            <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
-                selectedMenu === "Marks"
-                  ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
-                  : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
-              }`}
-              onClick={() => setSelectedMenu("Marks")}
-            >
-              Marks
-            </li>
-            <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
-                selectedMenu === "Awards"
-                  ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
-                  : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
-              }`}
-              onClick={() => setSelectedMenu("Awards")}
-            >
-              Awards
-            </li>
-            <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
-                selectedMenu === "Material"
-                  ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
-                  : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
-              }`}
-              onClick={() => setSelectedMenu("Material")}
-            >
-              Material
-            </li>
-            <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
-                selectedMenu === "Notice"
-                  ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
-                  : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
-              }`}
-              onClick={() => setSelectedMenu("Notice")}
-            >
-              Notice
-            </li>
-          </ul>
-          <>
-            {selectedMenu === "Timetable" && <Timetable />}
-            {selectedMenu === "Marks" && <Marks />}
-            {selectedMenu === "Awards" && <Awards />}
-            {selectedMenu === "Material" && <Material />}
-            {selectedMenu === "Notice" && <Notice />}
-            {selectedMenu === "My Profile" && <Profile />}
-          </>
+          <div className="flex h-screen">
+            {/* Sidebar */}
+            <div className="w-1/6 bg-gray-800 text-white text-sm p-4 rounded-lg ml-4 mt-4 mb-4">
+              <h1 className="text-2xl font-semibold mb-6 border-b-2 border-color: rgb(212 212 216) pb-4">
+                <p className="ml-12">Student Menu</p>
+              </h1>
+              <ul>
+                {menuItems.map((item) => (
+                  <li
+                    key={item.key}
+                    className={`menu-item ${
+                      selectedMenu === item.key
+                        ? "bg-blue-500 rounded-lg"
+                        : "hover:bg-gray-700 rounded-lg"
+                    }`}
+                    onClick={() => setSelectedMenu(item.key)}
+                  >
+                    <div
+                      className={`flex items-center p-4 ${
+                        selectedMenu === item.key
+                          ? "border-l-4 border-blue-500 rounded-lg"
+                          : ""
+                      }`}
+                      style={{
+                        cursor: "pointer",
+                      }}
+                    >
+                      {item.icon} <span className="ml-2">{item.label}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Content */}
+            <div className="w-5/6 p-4 overflow-y-auto">
+              <div style={{ marginBottom: "20px" }}>
+                <Navbar />
+              </div>
+              <div className="container">
+                {selectedMenu === "My Profile" && <Profile />}
+                {selectedMenu === "Timetable" && <Timetable />}
+                {selectedMenu === "Semester Marks" && <Marks />}
+                {selectedMenu === "Awards" && <Awards />}
+                {selectedMenu === "Material" && <Material />}
+                {selectedMenu === "Notice" && <Notice />}
+              </div>
+            </div>
+          </div>
         </>
       )}
       <Toaster position="bottom-center" />
     </section>
   );
 };
-
 export default Home;
