@@ -63,7 +63,11 @@ const Marks = () => {
 
   const submitMarksHandler = () => {
     // Check if the student's branch matches the faculty's department
-    if (selected.branch !== sessionStorage.getItem("faculty_branch")) {
+    // retrive faculty  department from session storage
+    const user = JSON.parse(sessionStorage.getItem("user"));
+    const facultyDepartment = user ? user.department : null;
+    console.log(facultyDepartment);
+    if (selected.branch !== facultyDepartment) {
       toast.error("Cannot upload marks for this student. Branch mismatch.");
       return;
     }
