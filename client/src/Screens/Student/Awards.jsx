@@ -163,21 +163,19 @@ fetchData();
                   <td className="border border-gray-400 px-4 py-2">{mark.remarks}</td>
                 </tr>
               ))}
+              {/* Additional row for Mean Score and Classification of Awards */}
+              <tr>
+                <td className="border border-gray-400 px-4 py-2" colSpan="2">Mean Score:</td>
+                <td className="border border-gray-400 px-4 py-2">{meanScore}</td>
+                <td className="border border-gray-400 px-4 py-2" colSpan="2">Classification of Awards: {classification}</td>
+              </tr>
             </tbody>
-          </table> 
+          </table>
         ) : (
           <p className="w-1/2 shadow-md p-4">No Marks Available At The Moment!</p>
         )}
-
-        {meanScore !== null && (
-          <div className="mt-4">
-            <p>Mean Score: {meanScore}</p>
-            <p>Classification of Awards: {classification}</p>
-          </div>
-        )}
-      </div> 
+      </div>
     </div>
   );
 };
- 
 export default Awards;
