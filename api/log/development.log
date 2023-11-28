@@ -7898,3 +7898,99 @@ Processing by SubjectsController#index as HTML
 Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 945)
 
 
+Started GET "/notices" for 127.0.0.1 at 2023-11-28 21:15:36 +0300
+Processing by NoticesController#index as HTML
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT "notices".* FROM "notices"[0m
+  ↳ app/controllers/notices_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1034)
+
+
+Started GET "/notices" for 127.0.0.1 at 2023-11-28 21:15:36 +0300
+Processing by NoticesController#index as HTML
+  [1m[36mNotice Load (0.1ms)[0m  [1m[34mSELECT "notices".* FROM "notices"[0m
+  ↳ app/controllers/notices_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1001)
+
+
+Started GET "/branches" for 127.0.0.1 at 2023-11-28 21:16:01 +0300
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 21:16:01 +0300
+Processing by BranchesController#index as HTML
+  [1m[36mBranch Load (0.1ms)[0m  [1m[34mSELECT "branches".* FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 1792)
+
+
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1035)
+
+
+Started GET "/branches" for 127.0.0.1 at 2023-11-28 21:16:01 +0300
+Processing by BranchesController#index as HTML
+  [1m[36mBranch Load (0.1ms)[0m  [1m[34mSELECT "branches".* FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1747)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 21:16:01 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/branches" for 127.0.0.1 at 2023-11-28 21:18:41 +0300
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 21:18:41 +0300
+Processing by BranchesController#index as HTML
+  [1m[36mBranch Load (0.1ms)[0m  [1m[34mSELECT "branches".* FROM "branches"[0m
+  ↳ app/controllers/branches_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1768)
+
+
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 945)
+
+
+Started POST "/loadStudentDetails" for 127.0.0.1 at 2023-11-28 21:19:09 +0300
+Processing by StudentsController#load_student as HTML
+  Parameters: {"branch"=>"BBIT", "semester"=>1, "enrollment_no"=>"2", "student"=>{"enrollment_no"=>"2", "branch"=>"BBIT", "semester"=>1}}
+[31mUnpermitted parameter: :student. Context: { controller: StudentsController, action: load_student, request: #<ActionDispatch::Request:0x00007f34583fa258>, params: {"branch"=>"BBIT", "semester"=>1, "enrollment_no"=>"2", "controller"=>"students", "action"=>"load_student", "student"=>{"enrollment_no"=>"2", "branch"=>"BBIT", "semester"=>1}} }[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."branch" = ? AND "students"."semester" = ? AND "students"."enrollment_no" = ? LIMIT ?[0m  [["branch", "BBIT"], ["semester", 1], ["enrollment_no", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:51:in `load_student'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 1204)
+
+
+Started POST "/loadStudentDetails" for 127.0.0.1 at 2023-11-28 21:19:42 +0300
+Processing by StudentsController#load_student as HTML
+  Parameters: {"branch"=>"BBIT", "semester"=>1, "enrollment_no"=>"1", "student"=>{"enrollment_no"=>"1", "branch"=>"BBIT", "semester"=>1}}
+[31mUnpermitted parameter: :student. Context: { controller: StudentsController, action: load_student, request: #<ActionDispatch::Request:0x00007f345013c870>, params: {"branch"=>"BBIT", "semester"=>1, "enrollment_no"=>"1", "controller"=>"students", "action"=>"load_student", "student"=>{"enrollment_no"=>"1", "branch"=>"BBIT", "semester"=>1}} }[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."branch" = ? AND "students"."semester" = ? AND "students"."enrollment_no" = ? LIMIT ?[0m  [["branch", "BBIT"], ["semester", 1], ["enrollment_no", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:51:in `load_student'
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 902)
+
+
+Started POST "/loadStudentDetails" for 127.0.0.1 at 2023-11-28 21:19:56 +0300
+Processing by StudentsController#load_student as HTML
+  Parameters: {"branch"=>"Computer Science", "semester"=>1, "enrollment_no"=>"1", "student"=>{"enrollment_no"=>"1", "branch"=>"Computer Science", "semester"=>1}}
+[31mUnpermitted parameter: :student. Context: { controller: StudentsController, action: load_student, request: #<ActionDispatch::Request:0x00007f347138a638>, params: {"branch"=>"Computer Science", "semester"=>1, "enrollment_no"=>"1", "controller"=>"students", "action"=>"load_student", "student"=>{"enrollment_no"=>"1", "branch"=>"Computer Science", "semester"=>1}} }[0m
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."branch" = ? AND "students"."semester" = ? AND "students"."enrollment_no" = ? LIMIT ?[0m  [["branch", "Computer Science"], ["semester", 1], ["enrollment_no", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:51:in `load_student'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 1138)
+
+
+Started POST "/marks" for 127.0.0.1 at 2023-11-28 21:20:11 +0300
+Processing by MarksController#create as HTML
+  Parameters: {"enrollment_no"=>"1", "score"=>"90", "examType"=>"internal", "subject"=>"C Programming Essentials", "mark"=>{"enrollment_no"=>"1", "examType"=>"internal", "score"=>"90", "subject"=>"C Programming Essentials"}}
+[31mUnpermitted parameter: :mark. Context: { controller: MarksController, action: create, request: #<ActionDispatch::Request:0x00007f34713c0cd8>, params: {"enrollment_no"=>"1", "score"=>"90", "examType"=>"internal", "subject"=>"C Programming Essentials", "controller"=>"marks", "action"=>"create", "mark"=>{"enrollment_no"=>"1", "examType"=>"internal", "score"=>"90", "subject"=>"C Programming Essentials"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/marks_controller.rb:29:in `create'
+  [1m[36mMark Create (0.2ms)[0m  [1m[32mINSERT INTO "marks" ("enrollment_no", "created_at", "updated_at", "examType", "score", "subject") VALUES (?, ?, ?, ?, ?, ?)[0m  [["enrollment_no", 1], ["created_at", "2023-11-28 18:20:11.658975"], ["updated_at", "2023-11-28 18:20:11.658975"], ["examType", "internal"], ["score", 90], ["subject", "C Programming Essentials"]]
+  ↳ app/controllers/marks_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/marks_controller.rb:29:in `create'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 10.3ms | Allocations: 2076)
+
+

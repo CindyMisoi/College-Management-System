@@ -62,6 +62,12 @@ const Marks = () => {
   };
 
   const submitMarksHandler = () => {
+    // Check if the student's branch matches the faculty's department
+    if (selected.branch !== sessionStorage.getItem("faculty_branch")) {
+      toast.error("Cannot upload marks for this student. Branch mismatch.");
+      return;
+    }
+
     // Here, marksValue object contains marks for all students
     const enrollment_no = selected.enrollment_no;
     const score = marksValue[enrollment_no];
