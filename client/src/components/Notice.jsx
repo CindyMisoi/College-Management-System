@@ -7,7 +7,8 @@ import { useLocation } from "react-router-dom";
 import { IoAddOutline } from "react-icons/io5";
 import { MdDeleteOutline, MdEditNote } from "react-icons/md";
 import { BiArrowBack } from "react-icons/bi";
-import toast from "react-hot-toast";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import apiServer from "../config/apiServer";
 
 const Notice = () => {
@@ -301,6 +302,7 @@ const Notice = () => {
           )}
         </form>
       )}
+      <ToastContainer/>
     </div>
   );
 };
