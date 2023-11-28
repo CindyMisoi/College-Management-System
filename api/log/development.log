@@ -3179,3 +3179,99 @@ Processing by AdminsController#index as HTML
 Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 887)
 
 
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 17:00:57 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1195)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 17:00:57 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 724)
+
+
+Started GET "/notices" for 127.0.0.1 at 2023-11-28 17:01:00 +0300
+Processing by NoticesController#index as HTML
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT "notices".* FROM "notices"[0m
+  ↳ app/controllers/notices_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1203)
+
+
+Started GET "/notices" for 127.0.0.1 at 2023-11-28 17:01:00 +0300
+Processing by NoticesController#index as HTML
+  [1m[36mNotice Load (0.1ms)[0m  [1m[34mSELECT "notices".* FROM "notices"[0m
+  ↳ app/controllers/notices_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 724)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 17:01:01 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 726)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 17:01:01 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 724)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2023-11-28 17:01:23 +0300
+Processing by SubjectsController#create as HTML
+  Parameters: {"name"=>"Introduction to C Programming", "code"=>"101", "subject"=>{"name"=>"Introduction to C Programming", "code"=>"101"}}
+[31mUnpermitted parameter: :subject. Context: { controller: SubjectsController, action: create, request: #<ActionDispatch::Request:0x00007f346cdc3690>, params: {"name"=>"Introduction to C Programming", "code"=>"101", "controller"=>"subjects", "action"=>"create", "subject"=>{"name"=>"Introduction to C Programming", "code"=>"101"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:12:in `create'
+  [1m[36mSubject Create (0.3ms)[0m  [1m[32mINSERT INTO "subjects" ("name", "code", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Introduction to C Programming"], ["code", 101], ["created_at", "2023-11-28 14:01:23.022592"], ["updated_at", "2023-11-28 14:01:23.022592"]]
+  ↳ app/controllers/subjects_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (10.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:12:in `create'
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 11.1ms | Allocations: 15168)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 17:01:23 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 859)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 17:01:45 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 838)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 17:01:54 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 838)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2023-11-28 17:02:14 +0300
+Processing by SubjectsController#create as HTML
+  Parameters: {"name"=>"C Programming Essentials", "code"=>"102", "subject"=>{"name"=>"C Programming Essentials", "code"=>"102"}}
+[31mUnpermitted parameter: :subject. Context: { controller: SubjectsController, action: create, request: #<ActionDispatch::Request:0x00007f3458012e38>, params: {"name"=>"C Programming Essentials", "code"=>"102", "controller"=>"subjects", "action"=>"create", "subject"=>{"name"=>"C Programming Essentials", "code"=>"102"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:12:in `create'
+  [1m[36mSubject Create (0.3ms)[0m  [1m[32mINSERT INTO "subjects" ("name", "code", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "C Programming Essentials"], ["code", 102], ["created_at", "2023-11-28 14:02:14.364823"], ["updated_at", "2023-11-28 14:02:14.364823"]]
+  ↳ app/controllers/subjects_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:12:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 2006)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2023-11-28 17:02:14 +0300
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/subjects_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 945)
+
+

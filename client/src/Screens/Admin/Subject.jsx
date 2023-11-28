@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import  toast  from "react-hot-toast";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Heading from "../../components/Heading";
 import { MdOutlineDelete } from "react-icons/md";
 import apiServer from "../../config/apiServer";
@@ -173,6 +174,7 @@ const Subjects = () => {
           </ul>
         </div>
       )}
+      <ToastContainer/>
     </div>
   );
 };
