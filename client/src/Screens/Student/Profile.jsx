@@ -1,13 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { setUserData } from "../../redux/actions";
 import apiServer from "../../config/apiServer";
 import toast from "react-hot-toast";
 const Profile = () => {
   const [showPass, setShowPass] = useState(false);
   const router = useLocation();
+  const nav = useNavigate();
   const [data, setData] = useState();
   const dispatch = useDispatch();
   const [password, setPassword] = useState({
@@ -104,6 +105,7 @@ const Profile = () => {
         if (response.data.success) {
           toast.success("password changed");
           setPassword({ new: "", current: "" });
+          nav("/");
         } else {
           toast.error(response.data.message);
         }
