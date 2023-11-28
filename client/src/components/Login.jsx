@@ -5,9 +5,11 @@ import axios from "axios";
 import {useNavigate} from "react-router";
 import toast, { Toaster } from "react-hot-toast";
 import apiServer from "../config/apiServer";
+import { setAuth, setUserId, setUserData } from "../redux/actions";
+import {useDispatch} from "react-redux";
 const Login = () => {
   const navigate = useNavigate();
-
+  const dispatch = useDispatch();
   const [selected, setSelected] = useState("Student");
   const { register, handleSubmit } = useForm();
 
@@ -27,6 +29,16 @@ const Login = () => {
         const response = await axios.post(url, { loginid, password: data.password }, {
           headers: headers,
         });
+        console.log(response.data);
+
+         // Save user data to session storage
+         sessionStorage.setItem("session_token", response.data.session_token);
+         sessionStorage.setItem("loginId", response.data.loginid);
+         sessionStorage.setItem("faculty", JSON.stringify(response.data));
+
+         dispatch(setAuth(response.data.session_token));
+         dispatch(setUserId(response.data.loginid));
+         dispatch(setUserData(response.data));
 
         navigate(`/${selected.toLowerCase()}`, {
           state: { type: selected, loginid: response.data.loginid },

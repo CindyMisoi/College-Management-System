@@ -33,7 +33,6 @@ const Profile = () => {
         if (response.data.success) {
           setData(response.data.faculty);
           console.log(response.data.faculty);
-          console.log(response.data.faculty);
           dispatch(
             setUserData({
               fullname: `${response.data.faculty.firstName} ${response.data.faculty.middleName} ${response.data.faculty.lastName}`,
