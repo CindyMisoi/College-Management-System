@@ -7,7 +7,7 @@ ADMINS = [
         loginid: 1,
         password: "admin123",
         email: "admin@example.com",
-        firstName: "Leila",
+        firstName: "Cynthia",
         middleName: "Jepkosgei",
         lastName: "Misoi",
         phoneNumber: 726160639,
