@@ -25,9 +25,9 @@ const Student = () => {
     e.preventDefault();
     toast.loading("Getting Student");
     // retrive faculty  department from session storage
-    const facultyDepartment = sessionStorage.getItem("faculty_branch");
+    const user = JSON.parse(sessionStorage.getItem("user"));
+    const facultyDepartment = user ? user.department : null;
     console.log(facultyDepartment);
-
     const headers = {
       "Content-Type": "application/json",
     };
