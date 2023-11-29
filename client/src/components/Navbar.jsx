@@ -2,7 +2,7 @@ import React from "react";
 import { FiLogOut } from "react-icons/fi";
 import { useLocation, useNavigate } from "react-router-dom";
 import { RxDashboard } from "react-icons/rx";
-import { setAuth, setUserId, setUserData } from "../redux/actions";
+import UserAvatar from "./UserAvatar";
 
 const Navbar = () => {
   const router = useLocation();
@@ -23,7 +23,9 @@ const Navbar = () => {
         </span>{" "}
         {router.state && router.state.type} Dashboard
       </p>
-      <button
+      <div className="flex items-center">
+        <UserAvatar/>
+         <button
         className="flex justify-center items-center text-red-500 px-3 py-2 font-semibold rounded-sm"
         onClick={handleLogout}
       >
@@ -32,6 +34,8 @@ const Navbar = () => {
           <FiLogOut />
         </span>
       </button>
+      </div>
+     
     </div>
   );
 };
